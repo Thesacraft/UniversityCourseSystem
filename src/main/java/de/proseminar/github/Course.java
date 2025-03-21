@@ -8,14 +8,12 @@ import java.util.List;
 
 public class Course {
     private final String name;
-    private final int courseID;
     private final String examDeadline;
     private final List<Student> students;
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd.MM.yyyy");
 
-    public Course(String name, int courseID, String examDeadline) {
+    public Course(String name, String examDeadline) {
         this.name = name;
-        this.courseID = courseID;
         this.examDeadline = examDeadline;
         students = new ArrayList<>();
     }
