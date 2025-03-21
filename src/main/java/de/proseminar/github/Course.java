@@ -36,10 +36,6 @@ public class Course {
         return name;
     }
 
-    public int getCourseID() {
-        return courseID;
-    }
-
     public String getExamDeadline() {
         return examDeadline;
     }
