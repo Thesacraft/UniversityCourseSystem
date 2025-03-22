@@ -26,7 +26,7 @@ jobs:
       - name: Generate JavaDoc
         run: |
           mkdir javadoc
-          javadoc -d javadoc -sourcepath src -subpackages de.proseminar.github
+          javadoc -d javadoc -sourcepath src/main/java -subpackages de.proseminar.github
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
