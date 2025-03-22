@@ -12,8 +12,8 @@ public class CourseRegistrationTest {
 
     @BeforeEach
     public void setUp() {
-        course = new Course("Proseminar: Fortgeschrittene Programmierkonzepte", 12_38953, "28.03.2025");
-        student = new Student("Max", 500000, 18);
+        course = new Course("Proseminar: Fortgeschrittene Programmierkonzepte", "28.03.2025");
+        student = new Student("Max", 500000);
     }
 
     @Test
