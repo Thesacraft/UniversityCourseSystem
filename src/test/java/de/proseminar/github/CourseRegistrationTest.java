@@ -23,6 +23,7 @@ public class CourseRegistrationTest {
 
     @Test
     void testRemoveStudent() {
+        course.signUpStudent(student);
         assertTrue(course.removeStudent(student), "Student should be able to leave the course.");
     }
 
