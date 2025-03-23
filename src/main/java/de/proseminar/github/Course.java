@@ -9,12 +9,14 @@ import java.util.List;
 public class Course {
     private final String name;
     private final String examDeadline;
+    private final String examDate;
     private final List<Student> students;
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd.MM.yyyy");
 
-    public Course(String name, String examDeadline) {
+    public Course(String name, String examDeadline, String examDate) {
         this.name = name;
         this.examDeadline = examDeadline;
+        this.examDate = examDate;
         students = new ArrayList<>();
     }
 
@@ -42,5 +44,8 @@ public class Course {
 
     public String getExamDeadline() {
         return examDeadline;
+    }
+    public String getExamDate(){
+        return examDate;
     }
 }
